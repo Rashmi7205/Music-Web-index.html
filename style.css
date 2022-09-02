@@ -96,6 +96,10 @@ body
   .main {
     height: 100%;
     width: 100%;
+    background-image: url(images/headphones-african-american-woman-s-portrait-isolated-dark-studio-background-multicolored-neon-light-beautiful-female-model-concept-human-emotions-facial-expression-sales-ad-fashion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .wrapper {
     height: 100%;
@@ -108,7 +112,6 @@ body
     height: 45%;
     width: 150%;
     margin: 10% -15%;
-    background-image: url(images/—Pngtree—headphone\ flat\ illustration_6935438.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
