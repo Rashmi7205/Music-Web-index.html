@@ -88,7 +88,7 @@ body
   background-color: transparent;
 }
 
-@media screen and (max-width: 373px) {
+@media screen and (max-width: 310px) {
   body {
     height: 700px;
     scroll-behavior: smooth;
