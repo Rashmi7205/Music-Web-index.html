@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/*Css for the body of the page*/
+.container{
+    width: 100%;
+    height:auto;
+}
+.container .landing{
+    width: 100%;
+    height:450px;
+    background-color: #db2e07;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.landing-title{
+    width:100%;
+    height: 50px;
+    margin:30px;
+    padding:10px;
+}
+.landing-title h3{
+    height:30px;
+    width: 200px;
+    padding:5px;
+    border-left: 4px solid black;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-style: italic;
+}
+.landing-catagory{
+    width: 98%;
+    height:300px;
+    display: flex;
+    justify-content: right;
+    column-gap: 10px;
+
+}
+.landing-catagory img
+{
+    width: 90%;
+    height: 90%;
+    margin: 12px;
+    border-radius: 20px;
+    z-index: 0;
+}
+.playlist-title{
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    color:#FFDE00;
+    text-align: justify;
+    padding-top: 30%;
+    padding-left: 2%;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 2px 0 rgb(21, 20, 20), -2px 0 rgb(13, 12, 12), 0 2px rgb(13, 13, 13), 0 -2px rgb(19, 11, 11),
+    1px 1px rgb(16, 16, 16), -1px -1px rgb(0, 0, 0), 1px -1px rgb(15, 15, 15), -1px 1px rgb(6, 4, 4),
+    5px 5px 0px blue,
+    9px 9px 0px green;
+}
+.landing-desc
+{
+    width: 350px;
+    height: 250px;
+    font-size: 1.6em;
+    color:#fff;
+    align-self: end;
+    text-transform: capitalize;
+    font-style: oblique;
+}
+.c1{
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    box-shadow:15px 15px 20px #1B2430;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.c2{
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    box-shadow:15px 15px 20px #0d0e0f;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}.c3{
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    box-shadow:15px 15px 20px #1B2430;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}.c4{
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    box-shadow:15px 15px 20px #1B2430;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.catagories{
+    height: 800px;
+    width: 100%;
+    background-color: #1B2430;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: repeat(3,170px);
+    grid-gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+/*Grid layout css*/
+.playlist-grid1{
+    grid-row-start: span 2;
+    background-image: url("images/90\'s\ gold.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
+.playlist-grid2{
+    background-image: url(images/Boy\ Cartoon\ Gamer\ Animated\ Twitch\ Profile\ Photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
+.playlist-grid3{
+    background-image: url(images/stockvault-guitarist189149.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
+.playlist-grid4{
+    background-image: url(images/Untitled\ design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row-start: span 2;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
+.playlist-grid5{
+   background-image: url(images/mood.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row-start: span 2;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
+.playlist-grid6{
+    background-image: url(images/Music.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
+.playlist-grid7{
+    background-image: url(images/headphones-african-american-woman-s-portrait-isolated-dark-studio-background-multicolored-neon-light-beautiful-female-model-concept-human-emotions-facial-expression-sales-ad-fashion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
+.playlist-grid8{
+    background-image: url(images/Untitled\ design\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: span 2;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px #0d0e0f;
+}
