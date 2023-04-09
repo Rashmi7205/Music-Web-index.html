@@ -12,172 +12,99 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
 
-    <title>Document</title>
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Boostrap path -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <title>MusicApp</title>
   </head>
   <body>
-    <header>
-      <div class="title">
-        <div class="name">
-          <i> <h1>Rock soul</h1></i>
-        </div>
-        <div class="s-links">
-          <ul>
-            <li>
-              <i
-                class="fa-brands fa-facebook"
-                style="color: rgb(40, 100, 231)"
-              ></i>
+    <!-- Nav bar section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color:#fff;">
+          <img src="./images/headphone.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          Music
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active style="color:#fff;"" aria-current="page" href="#" style="color:#fff;">Home</a>
             </li>
-            <li>
-              <i
-                class="fa-brands fa-instagram"
-                style="color: rgb(203, 46, 177)"
-              ></i>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:#fff;">Features</a>
             </li>
-            <li>
-              <i
-                class="fa-brands fa-youtube"
-                style="color: rgb(231, 40, 56)"
-              ></i>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:#fff;">Downloads</a>
             </li>
-            <li>
-              <i
-                class="fa-brands fa-twitter"
-                style="color: rgb(0, 192, 240)"
-              ></i>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" style="color:#fff;">Catagories</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="index.html"><i class="fa-solid fa-house" style="color:red,";></i><h4>Home</h4></a>
-          </li>
-          <li>
-              <a href="#"><i class="fa-solid fa-fire-flame-curved"></i><h4>Trending</h4></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i><h4>Search</h4></a>
-          </li>
-          <li>
-            <a href="catagory.html"><i class="fa-solid fa-hashtag"></i><h4>playlists</h4></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i><h4>Follow us</h4></a>
-          </li>
+    </nav>
+    <!-- Nav bar end -->
+
+    <!-- Hero section -->
+      <div class="hero container-fluid">
+      <!-- Player section -->
+      <div class="player">
+        <div class="player-heading">
+          <h1>welcome user</h1>
+          <h3>Listen all your favorite songs here</h3>
+          <button>Now Playing</button>
+        </div>
+        <div class="player-body">
+            <div class="controls">
+                <input type="range" id="slider" area-value="20"/>
+                <div class="control-menu">
+                  <i class="fa-solid fa-backward" style="color: #30dcdf;" id="control-prev"></i>
+                  <i class="fa-solid fa-circle-play" style="color: #47ffe0;" id="control-play" onclick="playPauseAudio()"></i>
+                  <i class="fa-solid fa-forward" style="color: #30dcdf;" id="control-next"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Content section -->
+      <div class="main-content">
+        <div class="artist-section">
+          <h1 style="font-size: 1.2em;">Popular Artist</h1>
+          <div class="artist-list">
+           <!-- script.js    -->
+          </div>
+        </div>
+        <div class="mdf-section">
+          <h1 style="font-size: 1.2em;">Made for you</h1>
+          <div class="mdf-list">
+           <!-- script.js    -->
+          </div>
+        </div>
+        <h1>Trending </h1>
+        <ul class="audList">
+            <!-- Script.js -->
         </ul>
       </div>
-    </header>
-    <div class="container">
-      <div class="player">
-        <div class="player-up">
-          <img src="images/headphone.jpg" alt="" id="pl-img" />
-        </div>
-        <div class="song-name">
-          <marquee behavior="" scrollamount="4" direction="toright"
-            ><h4 id="music-name"></h4
-          ></marquee>
-        </div>
-        <div class="player-down">
-          <i class="fa-solid fa-backward" onclick="back()"></i>
-          <i
-            class="fa-solid fa-play"
-            id="mplay"
-            onclick="Audiopp(this)"
-            id="id-pl"
-          ></i>
-          <i class="fa-solid fa-forward" onclick="next()"></i>
-        </div>
       </div>
-      <div class="list">
-        <div class="head">
-          <h1>Trending</h1>
-        </div>
-        <div id="s-list">
-          <ul id="list">
-            <li onclick="Pl(0)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Daku_64(PagalWorld.com.se)</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(1)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Dekha Ek Khwab x Laila - Sush
-                  Yohan_64(PagalWorld.com.se)</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(2)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Jo Tainu Dhoop Lagya Ve_64(PagalWorld.com.se)</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(3)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Kesariya_64(PagalWorld.com.se)</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(4)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Let Me Down Slowly x Main Dhoondne Ko Zamaane Mein (Gravero
-                  Mashup)_64(PagalWorld.com.se)</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(5)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Akela_64(PagalWorld.com.se)</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(6)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Song7</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(7)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Song8</marquee
-                >
-              </div>
-            </li>
-            <li onclick="Pl(8)">
-              <img src="" alt="" id="cover" />
-              <div id="about">
-                <marquee behavior="" scrollamount="4" direction="toright"
-                  >Song9</marquee
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <footer></footer>
-    <script src="script.js"></script>
+     
+    <!-- Hero section end -->
+    
+    
+    
+    <!-- footer -->
+    <!-- Footer end -->
   </body>
+  <script src="./script2.js">
+   
+  </script>
+  <script type="module" src="script.js"></script>
+  <script src="./artist.js"></script>
 </html>
