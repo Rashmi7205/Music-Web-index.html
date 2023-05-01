@@ -104,3 +104,11 @@ function fav(ele){
      else 
       ele.style.color='white';   
 }
+
+
+//Function for the made for you section
+function handlemdf(ele)
+{
+    let songname = ele.innerText
+    currAudio.src = `./audio/${songname}`
+}
